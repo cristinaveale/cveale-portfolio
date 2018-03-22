@@ -16,7 +16,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.scss",
+        "assets/sass/main.scss",
         "../node_modules/@clr/icons/clr-icons.min.css",
         "../node_modules/@clr/ui/clr-ui.min.css"
       ],
