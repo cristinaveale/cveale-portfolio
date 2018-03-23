@@ -2,11 +2,11 @@
 
 #about {
   background: white;
-  padding: 100px 0;
+  padding: 72px 0;
   @include breakpoint(xs) {
     padding: 84px 0;
   }
   aside {
-    margin: 24px 0 96px 0;
+    margin: 24px 0 64px 0;
   }
 }
