@@ -2,7 +2,9 @@
 
 #about {
   background: white;
-  padding: 72px 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   @include breakpoint(xs) {
     padding: 84px 0;
   }

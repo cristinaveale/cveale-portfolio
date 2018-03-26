@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { ClarityModule } from '@clr/angular';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
@@ -21,7 +22,12 @@ import { ServicesComponent } from './services/services.component';
     PortfolioComponent,
     ServicesComponent
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, ClarityModule.forRoot()],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    ClarityModule.forRoot(),
+    ScrollToModule.forRoot()
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
