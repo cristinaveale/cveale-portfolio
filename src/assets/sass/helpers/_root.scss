@@ -1,4 +1,5 @@
 @import 'mixins';
+@import 'variables';
 
 html {
   box-sizing: border-box;
@@ -12,10 +13,10 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  font-size: 16px;
+  font-size: $font-size;
   line-height: 1.5;
   letter-spacing: 1px;
-  background: #f7f7f7;
+  background: $white;
   @include breakpoint(xs) {
     text-align: center;
   }
@@ -26,7 +27,7 @@ body {
 }
 
 h1 {
-  font-weight: 600;
+  font-weight: $fw;
   font-size: 39px;
 }
 
@@ -43,12 +44,12 @@ h1 {
 .btn {
   color: #fff;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: $fw;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
-  margin-top: 24px;
-  padding: 0 24px;
+  padding: 0 $baseline * 2;
+  margin-top: $baseline * 2;
   &:visited {
     color: white;
   }

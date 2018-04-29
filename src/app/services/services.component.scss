@@ -1,0 +1,14 @@
+@import 'variables';
+#services {
+  background: $gray;
+  h1,
+  h4 {
+    color: $white;
+  }
+  p {
+    color: $text-gray;
+  }
+  clr-icon {
+    color: $gold;
+  }
+}

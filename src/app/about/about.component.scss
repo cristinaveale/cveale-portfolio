@@ -1,13 +1,11 @@
 @import 'mixins';
+@import 'variables';
 
 #about {
-  background: white;
-  height: 100vh;
-  display: flex;
+  background: $white;
+  height: $vh;
   align-items: center;
-  @include breakpoint(xs) {
-    padding: 84px 0;
-  }
+
   aside {
     margin: 24px 0 64px 0;
   }

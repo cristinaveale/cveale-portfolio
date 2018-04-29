@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ServicesComponent } from './services/services.component';
+import { PublishingComponent } from './publishing/publishing.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ServicesComponent } from './services/services.component';
     HeaderComponent,
     HomeComponent,
     PortfolioComponent,
-    ServicesComponent
+    ServicesComponent,
+    PublishingComponent
   ],
   imports: [
     BrowserModule,
