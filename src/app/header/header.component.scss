@@ -1,7 +1,26 @@
-.branding {
-  min-width: auto;
+@import 'variables';
+
+clr-header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  .branding {
+    min-width: auto;
+    .logo {
+      height: 40px;
+      align-items: center;
+    }
+  }
+  .header-nav {
+    li {
+      cursor: pointer;
+      &:hover {
+        color: $gold;
+      }
+    }
+  }
 }
-.logo {
-  height: 40px;
-  align-items: center;
+
+.nav-link.active {
+  color: $gold;
 }

@@ -5,21 +5,11 @@
     </a>
   </div>
   <div class="header-nav" [clr-nav-level]="2">
-    <a href="/#home" class="active nav-link nav-text" [ngx-scroll-to]="'#home'">
-      Home
-    </a>
-    <a href="/#about" class="nav-link nav-text" [ngx-scroll-to]="'#about'">
-      About
-    </a>
-    <a href="/#portfolio" class="nav-link nav-text" [ngx-scroll-to]="'#portfolio'">
-      Portfolio
-    </a>
-    <a href="/#services" class="nav-link nav-text" [ngx-scroll-to]="'#services'">
-      Services
-    </a>
-    <a href="/#contact" class="nav-link nav-text" [ngx-scroll-to]="'#contact'">
-      Contact
-    </a>
+    <ul>
+      <li class="nav-link nav-text" *ngFor="let item of menu" (click)="select(item)" [ngClass]="{active: isActive(item)}" [ngx-scroll-to]="item.menuId">
+        <a>{{item.title}}</a>
+      </li>
+    </ul>
   </div>
   <div class="header-actions">
     <a href="..." role="tooltip" aria-haspopup="true" class="nav-link nav-icon tooltip tooltip-sm tooltip-bottom-left">
@@ -28,3 +18,9 @@
     </a>
   </div>
 </clr-header>
+
+<a href="#home" class="btn-up" [ngx-scroll-to]="'#home'">
+  <span>
+    <clr-icon shape="arrow" size="32"></clr-icon>
+  </span>
+</a>

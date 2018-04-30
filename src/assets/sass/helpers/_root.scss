@@ -42,7 +42,7 @@ h1 {
   }
 }
 .btn {
-  color: #fff;
+  color: $white;
   font-size: 12px;
   font-weight: $fw;
   -webkit-border-radius: 50px;
@@ -52,5 +52,39 @@ h1 {
   margin-top: $baseline * 2;
   &:visited {
     color: white;
+  }
+}
+
+.btn-up {
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+  z-index: 40;
+  span {
+    display: block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 16px;
+    color: $white;
+    background-color: #383838;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    &:hover {
+      background-color: $gold;
+    }
+  }
+}
+
+a {
+  cursor: pointer;
+  &:hover {
+    color: $gold;
+    text-decoration: none;
+  }
+  &:visited {
+    color: $gold;
   }
 }
