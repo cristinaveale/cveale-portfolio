@@ -1,18 +1,17 @@
 <clr-header class="header-1" id="header">
   <div class="branding">
     <a href="/#home">
-      <img class="logo" src="../assets/images/cv-logo.svg" alt="Cristina Veale Logo">
+      <img class="logo" src="../../assets/images/cv-logo.svg" alt="Cristina Veale Logo">
     </a>
   </div>
-  <div class="header-nav" [clr-nav-level]="2">
-    <ul>
-      <li class="nav-link nav-text" *ngFor="let item of menu" (click)="select(item)" [ngClass]="{active: isActive(item)}" [ngx-scroll-to]="item.menuId">
-        <a>{{item.title}}</a>
-      </li>
-    </ul>
-  </div>
+  <ul class="header-nav" [clr-nav-level]="2">
+    <li class="sidenav" class="nav-link nav-text" *ngFor="let item of menu" (click)="select(item)" [ngClass]="{active: isActive(item)}"
+      [ngx-scroll-to]="item.menuId">
+      <a>{{item.title}}</a>
+    </li>
+  </ul>
   <div class="header-actions">
-    <a href="..." role="tooltip" aria-haspopup="true" class="nav-link nav-icon tooltip tooltip-sm tooltip-bottom-left">
+    <a href="../assets/files/cveale_resume.docx" role="tooltip" aria-haspopup="true" class="nav-link nav-icon tooltip tooltip-sm tooltip-bottom-left">
       <clr-icon shape="download"></clr-icon>
       <span class="tooltip-content">Download Resume</span>
     </a>
