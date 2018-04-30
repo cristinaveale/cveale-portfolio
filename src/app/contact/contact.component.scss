@@ -1,14 +1,15 @@
 @import 'variables';
+@import 'mixins';
+
 #contact {
-  background: $gray;
-  h1,
-  h4 {
-    color: $white;
+  background: $gold;
+  img {
+    height: $baseline * 3;
+    @include breakpoint(xs) {
+      height: $baseline * 2;
+    }
   }
-  p {
-    color: $text-gray;
-  }
-  clr-icon {
-    color: $gold;
+  footer {
+    font-size: $sub-baseline * 1.4;
   }
 }

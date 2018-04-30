@@ -17,8 +17,8 @@
 .intro-msg {
   position: absolute;
   top: 48%;
-  left: 40%;
-  max-width: 13rem;
+  left: 65%;
+  max-width: 18rem;
   -webkit-transform: translate(-68%, -50%);
   -moz-transform: translate(-68%, -50%);
   transform: translate(-68%, -50%);
@@ -31,6 +31,7 @@
   }
   h1 {
     color: white;
+    font-size: $baseline * 3;
     @include breakpoint(xs) {
       font-size: 23px;
     }

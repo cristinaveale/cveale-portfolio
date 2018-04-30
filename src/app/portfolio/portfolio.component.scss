@@ -3,3 +3,7 @@
 #portfolio {
   background: $off-white;
 }
+.card.clickable:hover {
+  box-shadow: 0 0.125rem 0 0 $gold;
+  border: 1px solid $gold;
+}
