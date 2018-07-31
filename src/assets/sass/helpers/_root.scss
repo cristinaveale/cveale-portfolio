@@ -56,7 +56,6 @@ h1 {
 }
 
 .btn-up {
-  border: 1px solid $white;
   position: fixed;
   bottom: 48px;
   right: 48px;
@@ -64,11 +63,9 @@ h1 {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  &:hover {
-    border: 1px solid $gold;
-  }
   span {
     display: block;
+    border-radius: 50%;
     width: 48px;
     height: 48px;
     line-height: 48px;
@@ -81,6 +78,7 @@ h1 {
     transition: all 0.4s ease;
     &:hover {
       background-color: $gold;
+      color: $gray;
     }
   }
 }
