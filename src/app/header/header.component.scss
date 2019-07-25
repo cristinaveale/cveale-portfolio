@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 clr-header {
   position: fixed;
@@ -17,14 +17,14 @@ clr-header {
       color: $white;
       font-weight: 600;
       &:hover {
-        color: $gold;
+        color: $purple;
       }
     }
   }
 }
 
 .nav-link.active {
-  color: $gold;
+  color: $purple;
 }
 
 .header,
@@ -32,4 +32,9 @@ clr-header {
 header,
 header.header-1 {
   background-color: $gray;
+}
+
+.header .header-nav .nav-link,
+header .header-nav .nav-link {
+  opacity: 1;
 }

@@ -1,11 +1,21 @@
 <clr-header id="header">
   <div class="branding">
-    <img class="logo" src="../../assets/images/cv-logo.svg" alt="Cristina Veale Logo">
+    <img
+      class="logo"
+      src="../../assets/images/cv-logo.svg"
+      alt="Cristina Veale Logo"
+    />
   </div>
   <ul class="header-nav" [clr-nav-level]="2">
-    <li class="sidenav" class="nav-link nav-text" *ngFor="let item of menu" (click)="select(item)" [ngClass]="{'active': isActive(item)}"
-      [ngx-scroll-to]="item.menuId">
-      <a>{{item.title}}</a>
+    <li
+      class="sidenav"
+      class="nav-link nav-text"
+      *ngFor="let item of menu"
+      (click)="select(item)"
+      [ngClass]="{ active: isActive(item) }"
+      [ngx-scroll-to]="item.menuId"
+    >
+      <a>{{ item.title }}</a>
     </li>
   </ul>
 </clr-header>

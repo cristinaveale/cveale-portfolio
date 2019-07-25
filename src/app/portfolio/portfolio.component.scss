@@ -1,9 +1,13 @@
-@import 'variables';
+@import "variables";
 
 #portfolio {
-  background: $off-white;
+  background: $purple;
+  h1,
+  p {
+    color: $white;
+  }
 }
 .card.clickable:hover {
-  box-shadow: 0 0.125rem 0 0 $gold;
-  border: 1px solid $gold;
+  box-shadow: 0 0.125rem 0 0 $purple;
+  border: 1px solid $purple;
 }

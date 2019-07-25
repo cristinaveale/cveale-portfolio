@@ -1,8 +1,15 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 #contact {
-  background: $gold;
+  background: $purple;
+  color: $white;
+  h1,
+  h3,
+  p,
+  a {
+    color: $white;
+  }
   img {
     height: $baseline * 3;
     @include breakpoint(xs) {
@@ -10,6 +17,6 @@
     }
   }
   footer {
-    font-size: $sub-baseline * 1.4;
+    font-size: $baseline;
   }
 }

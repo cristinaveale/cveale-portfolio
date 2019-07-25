@@ -1,14 +1,14 @@
-@import 'variables';
+@import "variables";
 #services {
   background: $gray;
   h1,
-  h4 {
+  h3 {
     color: $white;
   }
   p {
-    color: $text-gray;
+    color: $white;
   }
   clr-icon {
-    color: $gold;
+    color: $purple;
   }
 }
