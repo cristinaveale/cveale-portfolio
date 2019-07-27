@@ -1,8 +1,8 @@
 @import "variables";
 
 .card.clickable:hover {
-  box-shadow: 0 0.125rem 0 0 $purple;
-  border: 1px solid $purple;
+  box-shadow: 0 0.125rem 0 0 $purple-3;
+  border: 1px solid $purple-3;
 }
 .card-subtext {
   font-size: $sm-font-size;

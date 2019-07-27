@@ -17,21 +17,29 @@ clr-header {
       color: $white;
       font-weight: 600;
       &:hover {
-        color: $purple;
+        color: $purple-2;
       }
     }
   }
 }
 
 .nav-link.active {
-  color: $purple;
+  color: $purple-2;
 }
 
 .header,
 .header.header-1,
 header,
 header.header-1 {
-  background-color: $gray;
+  background: rgb(61, 59, 63);
+  background: linear-gradient(
+    90deg,
+    rgba(61, 59, 63, 1) 60%,
+    rgba(98, 40, 101, 1) 74%,
+    rgba(160, 85, 141, 1) 91%,
+    rgba(204, 98, 129, 1) 100%
+  );
+  opacity: 0.8;
 }
 
 .header .header-nav .nav-link,

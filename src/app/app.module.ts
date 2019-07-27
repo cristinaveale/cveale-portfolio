@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ServicesComponent } from './services/services.component';
 import { PublishingComponent } from './publishing/publishing.component';
+import { OrganizationsComponent } from './organizations/organizations.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PublishingComponent } from './publishing/publishing.component';
     HomeComponent,
     PortfolioComponent,
     ServicesComponent,
-    PublishingComponent
+    PublishingComponent,
+    OrganizationsComponent
   ],
   imports: [
     BrowserModule,
