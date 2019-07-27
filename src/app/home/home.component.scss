@@ -3,8 +3,8 @@
 @import "root";
 
 .intro {
-  background: url(../../assets/images/cv-bg.jpg) center center no-repeat;
-  background-color: #010101;
+  background: url("../../assets/images/cv-bg.jpg") center center no-repeat;
+  background-color: $gray;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -34,8 +34,8 @@
     left: 60%;
   }
   h1 {
-    color: white;
-    font-size: $baseline * 3;
+    color: $white;
+    font-size: $baseline * 2.6;
     @include breakpoint(xs) {
       font-size: $baseline * 2.5;
     }
