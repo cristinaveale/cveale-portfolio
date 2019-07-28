@@ -8,16 +8,16 @@
   aside {
     margin: ($sub-baseline * 2) 0 ($baseline * 2) 0;
   }
-  @include breakpoint(xs) {
-    padding-top: inherit;
-    .about-second-img {
-      background: url(../../assets/images/cv-bg.jpg) no-repeat;
-      background-size: cover;
-      background-position: center;
-      width: 100%;
-      height: $baseline * 24;
-    }
-  }
+  // @include breakpoint(xs) {
+  //   padding-top: inherit;
+  //   .about-second-img {
+  //     background: url(../../assets/images/cv-bg.jpg) no-repeat;
+  //     background-size: cover;
+  //     background-position: center;
+  //     width: 100%;
+  //     height: $baseline * 24;
+  //   }
+  // }
 
   .about-text {
     text-align: left;
